@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4221473790275218}
   - component: {fileID: 61550416743748888}
   - component: {fileID: 50029973834232140}
+  - component: {fileID: 114363558935388320}
   m_Layer: 0
   m_Name: Needle
   m_TagString: Untagged
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1889803175223348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4457991430757860}
@@ -109,7 +110,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1889803175223348}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -162,6 +163,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.085, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &114363558935388320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1889803175223348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b14c0e431f574def8de116fbd880c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needleBody: {fileID: 1141823238687312}
 --- !u!212 &212376956221024836
 SpriteRenderer:
   m_ObjectHideFlags: 1
